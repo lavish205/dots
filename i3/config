@@ -186,3 +186,11 @@ bar {
 # i3lock shortcut
 bindsym Control+$mod+l exec sh ~/.config/i3/i3lock.sh
 exec --no-startup-id nm-applet
+
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
+bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
+
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
