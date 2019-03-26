@@ -194,3 +194,5 @@ bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+bindsym Control+$mod+s exec scrot /tmp/screenshot.png
